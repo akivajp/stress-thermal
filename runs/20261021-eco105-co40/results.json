@@ -1,0 +1,26 @@
+[
+  {
+    "phase": "idle-start",
+    "sub": "",
+    "start": 1792549548.0625324,
+    "end": 1792549848.063132,
+    "ok": true,
+    "commands": []
+  },
+  {
+    "phase": "cpu-all",
+    "sub": "",
+    "start": 1792549848.0638466,
+    "end": 1792551648.097033,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief",
+        "log_path": "runs/20261021-eco105-co40/logs/cpu-all-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "metrics": {
+    "idle-start": {
+      "Tctl 最高": "52℃",
+      "CCD 最高": "65℃",
+      "上限付近の割合": "0%",
+      "CPU 電力 最大/平均": "38/27W",
+      "CPU クロック最高": "5470MHz",
+      "GPU0 温度/電力": "45℃/22W",
+      "GPU0 制限": "",
+      "GPU1 温度/電力": "42℃/7W",
+      "GPU1 制限": "",
+      "nvme0 最高": "60℃",
+      "nvme1 最高": "46℃",
+      "nvme2 最高": "59℃",
+      "DIMM 最高": "46℃",
+      "MB Thermistor 14": "58℃",
+      "MB Thermistor 15": "42℃",
+      "fan1 最高/平均": "913/902rpm",
+      "fan3 最高/平均": "855/848rpm"
+    },
+    "cpu-all": {
+      "Tctl 最高": "86℃",
+      "CCD 最高": "87℃",
+      "上限付近の割合": "55%",
+      "CPU 電力 最大/平均": "194/178W",
+      "CPU クロック最高": "5349MHz",
+      "GPU0 温度/電力": "45℃/67W",
+      "GPU0 制限": "",
+      "GPU1 温度/電力": "43℃/30W",
+      "GPU1 制限": "",
+      "nvme0 最高": "60℃",
+      "nvme1 最高": "48℃",
+      "nvme2 最高": "59℃",
+      "DIMM 最高": "48℃",
+      "MB Thermistor 14": "58℃",
+      "MB Thermistor 15": "70℃",
+      "fan1 最高/平均": "2424/1750rpm",
+      "fan3 最高/平均": "2086/2068rpm"
+    },
+    "cpu-per-core": {
+      "Tctl 最高": "83℃",
+      "CCD 最高": "65℃",
+      "上限付近の割合": "0%",
+      "CPU 電力 最大/平均": "47/42W",
+      "CPU クロック最高": "5659MHz",
+      "GPU0 温度/電力": "41℃/19W",
+      "GPU0 制限": "",
+      "GPU1 温度/電力": "41℃/7W",
+      "GPU1 制限": "",
+      "nvme0 最高": "57℃",
+      "nvme1 最高": "48℃",
+      "nvme2 最高": "56℃",
+      "DIMM 最高": "48℃",
+      "MB Thermistor 14": "56℃",
+      "MB Thermistor 15": "71℃",
+      "fan1 最高/平均": "1749/1068rpm",
+      "fan3 最高/平均": "2079/1116rpm"
+    }
+  },
+  "verdict": {
+    "idle-start": "OK",
+    "cpu-all": "OK"
+  },
+  "nvme_before": {
+    "nvme0": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    },
+    "nvme1": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    },
+    "nvme2": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 64,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 314,
+      "thm_temp2_total_time": 0
+    }
+  },
+  "hw_errors_boot_before_run": 0,
+  "aborted": true,
+  "start": "2026-10-21T11:25:47",
+  "end": "2026-10-21T12:03:37",
+  "hw_errors": [],
+  "nvme_after": {
+    "nvme0": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    },
+    "nvme1": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    },
+    "nvme2": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 64,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 314,
+      "thm_temp2_total_time": 0
+    }
+  }
+}

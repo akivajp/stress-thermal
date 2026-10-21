@@ -1,0 +1,327 @@
+[
+  {
+    "phase": "idle-start",
+    "sub": "",
+    "start": 1792502302.0011272,
+    "end": 1792502602.0018158,
+    "ok": true,
+    "commands": []
+  },
+  {
+    "phase": "cpu-all",
+    "sub": "",
+    "start": 1792502602.0025895,
+    "end": 1792504402.035583,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-all-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu0",
+    "start": 1792504402.0361087,
+    "end": 1792504582.0526407,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 0 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu0-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu1",
+    "start": 1792504582.0532663,
+    "end": 1792504762.0697122,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 1 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu1-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu2",
+    "start": 1792504762.0702198,
+    "end": 1792504942.086796,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 2 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu2-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu3",
+    "start": 1792504942.0874093,
+    "end": 1792505122.1040683,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 3 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu3-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu4",
+    "start": 1792505122.104606,
+    "end": 1792505302.1210604,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 4 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu4-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu5",
+    "start": 1792505302.1217341,
+    "end": 1792505482.1383357,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 5 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu5-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu6",
+    "start": 1792505482.1391091,
+    "end": 1792505662.155692,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 6 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu6-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu7",
+    "start": 1792505662.1563168,
+    "end": 1792505842.1729302,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 7 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu7-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu8",
+    "start": 1792505842.1734893,
+    "end": 1792506022.190117,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 8 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu8-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu9",
+    "start": 1792506022.190781,
+    "end": 1792506202.207268,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 9 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu9-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu10",
+    "start": 1792506202.2079902,
+    "end": 1792506382.2244713,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 10 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu10-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu11",
+    "start": 1792506382.2252228,
+    "end": 1792506562.2418265,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 11 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu11-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu12",
+    "start": 1792506562.2424128,
+    "end": 1792506742.2589436,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 12 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu12-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu13",
+    "start": 1792506742.2596793,
+    "end": 1792506922.2762573,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 13 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu13-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu14",
+    "start": 1792506922.2770169,
+    "end": 1792507102.2936137,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 14 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu14-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu15",
+    "start": 1792507102.2943676,
+    "end": 1792507282.3110895,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 15 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/cpu-per-core_cpu15-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "combined",
+    "sub": "",
+    "start": 1792507282.3118246,
+    "end": 1792509085.0114825,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief",
+        "log_path": "runs/20261020-221830/logs/combined-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 1800",
+        "log_path": "runs/20261020-221830/logs/combined-1.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 1800",
+        "log_path": "runs/20261020-221830/logs/combined-2.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "fio --name=ssd --filename=/home/akiva/.cache/stress-thermal/fio.dat --size=8G --offset_increment=8G --numjobs=4 --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime=1800 --group_reporting",
+        "log_path": "runs/20261020-221830/logs/combined-3.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "idle-end",
+    "sub": "",
+    "start": 1792509085.012189,
+    "end": 1792509385.012713,
+    "ok": true,
+    "commands": []
+  }
+]

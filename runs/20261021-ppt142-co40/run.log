@@ -1,0 +1,36 @@
+2026-10-21 12:14:33 INFO 出力先: runs/20261021-ppt142-co40 (tail -f runs/20261021-ppt142-co40/run.log で経過を追える)
+2026-10-21 12:14:33 INFO 予定: 19項目, 合計 88.0分
+2026-10-21 12:14:33 INFO   idle-start              300秒  (アイドル)
+2026-10-21 12:14:33 INFO   cpu-all                1800秒  stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu0     180秒  taskset -c 0 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu1     180秒  taskset -c 1 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu2     180秒  taskset -c 2 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu3     180秒  taskset -c 3 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu4     180秒  taskset -c 4 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu5     180秒  taskset -c 5 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu6     180秒  taskset -c 6 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu7     180秒  taskset -c 7 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu8     180秒  taskset -c 8 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu9     180秒  taskset -c 9 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu10    180秒  taskset -c 10 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu11    180秒  taskset -c 11 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu12    180秒  taskset -c 12 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu13    180秒  taskset -c 13 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu14    180秒  taskset -c 14 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   cpu-per-core   cpu15    180秒  taskset -c 15 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-21 12:14:33 INFO   idle-end                300秒  (アイドル)
+2026-10-21 12:14:33 INFO 開始: idle-start (300秒, コマンド0本)
+2026-10-21 12:15:33 INFO idle-start: Tctl 52℃ | CPU 24W 3842MHz | GPU0 42℃ 17W | GPU1 45℃ 6W | NVMe 56℃ | FAN 901/849rpm
+2026-10-21 12:16:33 INFO idle-start: Tctl 51℃ | CPU 25W 4112MHz | GPU0 42℃ 18W | GPU1 44℃ 6W | NVMe 57℃ | FAN 902/857rpm
+2026-10-21 12:17:33 INFO idle-start: Tctl 51℃ | CPU 24W 3651MHz | GPU0 42℃ 18W | GPU1 43℃ 6W | NVMe 57℃ | FAN 902/845rpm
+2026-10-21 12:18:33 INFO idle-start: Tctl 51℃ | CPU 23W 4375MHz | GPU0 43℃ 18W | GPU1 43℃ 6W | NVMe 58℃ | FAN 901/849rpm
+2026-10-21 12:19:33 INFO 終了: idle-start → OK
+2026-10-21 12:19:33 INFO 開始: cpu-all (1800秒, コマンド1本)
+2026-10-21 12:19:33 INFO   $ stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief
+2026-10-21 12:19:34 INFO cpu-all: Tctl 52℃ | CPU 40W 5455MHz | GPU0 43℃ 17W | GPU1 42℃ 6W | NVMe 58℃ | FAN 902/829rpm
+2026-10-21 12:20:34 INFO cpu-all: Tctl 85℃ | CPU 178W 5135MHz | GPU0 42℃ 18W | GPU1 42℃ 6W | NVMe 58℃ | FAN 1751/2079rpm
+2026-10-21 12:21:34 INFO cpu-all: Tctl 84℃ | CPU 178W 5091MHz | GPU0 41℃ 17W | GPU1 42℃ 6W | NVMe 58℃ | FAN 1751/2054rpm
+2026-10-21 12:22:34 INFO cpu-all: Tctl 85℃ | CPU 176W 5106MHz | GPU0 40℃ 17W | GPU1 42℃ 6W | NVMe 58℃ | FAN 1751/2072rpm
+2026-10-21 12:23:34 INFO cpu-all: Tctl 83℃ | CPU 180W 5095MHz | GPU0 40℃ 17W | GPU1 42℃ 6W | NVMe 57℃ | FAN 1751/2076rpm
+2026-10-21 12:24:34 INFO cpu-all: Tctl 84℃ | CPU 179W 5090MHz | GPU0 40℃ 17W | GPU1 41℃ 6W | NVMe 57℃ | FAN 1751/2054rpm
+2026-10-21 12:24:46 WARNING 中断されました。負荷コマンドを停止します

@@ -1,0 +1,59 @@
+{
+  "nvme_before": {
+    "nvme0": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 64,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 314,
+      "thm_temp2_total_time": 0
+    },
+    "nvme1": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    },
+    "nvme2": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    }
+  },
+  "hw_errors_boot_before_run": 0,
+  "aborted": false,
+  "start": "2026-10-21T23:15:15",
+  "end": "2026-10-22T00:38:15",
+  "hw_errors": [],
+  "nvme_after": {
+    "nvme0": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 64,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 314,
+      "thm_temp2_total_time": 0
+    },
+    "nvme1": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    },
+    "nvme2": {
+      "warning_temp_time": 0,
+      "critical_comp_time": 0,
+      "thm_temp1_trans_count": 0,
+      "thm_temp2_trans_count": 0,
+      "thm_temp1_total_time": 0,
+      "thm_temp2_total_time": 0
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$ stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief
+stress-ng: info:  [1700317] setting to a 30 mins run per stressor
+stress-ng: info:  [1700317] dispatching hogs: 16 cpu, 16 matrix
+stress-ng: info:  [1700317] note: 32 cpus have scaling governors set to powersave and this may impact performance; setting /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor to 'performance' may improve performance
+stress-ng: info:  [1700346] matrix: using 192KB per stressor instance (total 3MB of 16.08GB available memory)
+stress-ng: metrc: [1700317] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: metrc: [1700317]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: metrc: [1700317] cpu            40639288   1800.00  23911.39    116.92     22577.38        1691.31
+stress-ng: metrc: [1700317] matrix        103179496   1800.00  23889.40    118.34     57322.02        4297.76
+stress-ng: info:  [1700317] skipped: 0
+stress-ng: info:  [1700317] passed: 32: cpu (16) matrix (16)
+stress-ng: info:  [1700317] failed: 0
+stress-ng: info:  [1700317] metrics untrustworthy: 0
+stress-ng: info:  [1700317] successful run completed in 30 mins

@@ -1,0 +1,282 @@
+[
+  {
+    "phase": "cpu-all",
+    "sub": "",
+    "start": 1792592115.2144358,
+    "end": 1792593915.2479882,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-all-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu0",
+    "start": 1792593915.2485127,
+    "end": 1792594095.3637762,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 0 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu0-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu1",
+    "start": 1792594095.3644247,
+    "end": 1792594275.3814137,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 1 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu1-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu2",
+    "start": 1792594275.381931,
+    "end": 1792594455.3985322,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 2 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu2-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu3",
+    "start": 1792594455.3991668,
+    "end": 1792594635.4156768,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 3 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu3-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu4",
+    "start": 1792594635.4163156,
+    "end": 1792594815.433018,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 4 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu4-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu5",
+    "start": 1792594815.433673,
+    "end": 1792594995.450333,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 5 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu5-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu6",
+    "start": 1792594995.4509923,
+    "end": 1792595175.4675817,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 6 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu6-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu7",
+    "start": 1792595175.4680605,
+    "end": 1792595355.4845693,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 7 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu7-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu8",
+    "start": 1792595355.4853342,
+    "end": 1792595535.5019314,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 8 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu8-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu9",
+    "start": 1792595535.5027635,
+    "end": 1792595715.5194254,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 9 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu9-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu10",
+    "start": 1792595715.520136,
+    "end": 1792595895.5367603,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 10 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu10-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu11",
+    "start": 1792595895.5372355,
+    "end": 1792596075.5537324,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 11 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu11-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu12",
+    "start": 1792596075.5543406,
+    "end": 1792596255.570743,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 12 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu12-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu13",
+    "start": 1792596255.5714283,
+    "end": 1792596435.5879247,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 13 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu13-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu14",
+    "start": 1792596435.5886664,
+    "end": 1792596615.605321,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 14 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu14-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "cpu-per-core",
+    "sub": "cpu15",
+    "start": 1792596615.6060195,
+    "end": 1792596795.6225405,
+    "ok": true,
+    "commands": [
+      {
+        "command": "taskset -c 15 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief",
+        "log_path": "runs/20261021-ppt162-co25-30/logs/cpu-per-core_cpu15-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "idle-end",
+    "sub": "",
+    "start": 1792596795.6232357,
+    "end": 1792597095.6239192,
+    "ok": true,
+    "commands": []
+  }
+]

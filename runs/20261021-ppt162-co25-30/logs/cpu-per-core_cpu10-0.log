@@ -1,0 +1,12 @@
+$ taskset -c 10 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+stress-ng: info:  [75941] setting to a 3 mins run per stressor
+stress-ng: info:  [75941] dispatching hogs: 1 cpu
+stress-ng: info:  [75941] note: 32 cpus have scaling governors set to powersave and this may impact performance; setting /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor to 'performance' may improve performance
+stress-ng: metrc: [75941] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: metrc: [75941]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: metrc: [75941] cpu              499892    180.00    179.98      0.00      2777.18        2777.42
+stress-ng: info:  [75941] skipped: 0
+stress-ng: info:  [75941] passed: 1: cpu (1)
+stress-ng: info:  [75941] failed: 0
+stress-ng: info:  [75941] metrics untrustworthy: 0
+stress-ng: info:  [75941] successful run completed in 3 mins

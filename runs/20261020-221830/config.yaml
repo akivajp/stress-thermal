@@ -1,0 +1,32 @@
+interval: 1.0
+grace: 60
+cpu_temp_limit: 85
+scratch_dir: ~/.cache/stress-thermal
+notes: 'BIOS: TDP 105W 制限 / PBO 有効 / 温度上限 (Tjmax) 85℃ / Curve Optimizer 全コア -30
+
+  '
+phases:
+- name: idle-start
+  duration: 300
+- name: cpu-all
+  duration: 1800
+  commands:
+  - stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout {duration}s
+    --metrics-brief
+- name: cpu-per-core
+  per_core: 180
+  command: taskset -c {cpu} stress-ng --cpu 1 --cpu-method all --verify --timeout
+    {duration}s --metrics-brief
+- name: combined
+  duration: 1800
+  commands:
+  - stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout {duration}s
+    --metrics-brief
+  - uv run --extra gpu python scripts/gpu_load.py --device 0 --duration {duration}
+  - uv run --extra gpu python scripts/gpu_load.py --device 1 --duration {duration}
+  - fio --name=ssd --filename={scratch}/fio.dat --size=8G --offset_increment=8G --numjobs=4
+    --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime={duration}
+    --group_reporting
+- name: idle-end
+  duration: 300
+scale: 1.0

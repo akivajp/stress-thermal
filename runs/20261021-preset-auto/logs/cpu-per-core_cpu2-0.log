@@ -1,0 +1,4 @@
+$ taskset -c 2 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+stress-ng: info:  [57281] setting to a 3 mins run per stressor
+stress-ng: info:  [57281] dispatching hogs: 1 cpu
+stress-ng: info:  [57281] note: 32 cpus have scaling governors set to powersave and this may impact performance; setting /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor to 'performance' may improve performance
