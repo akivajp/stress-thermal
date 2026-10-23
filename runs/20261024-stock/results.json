@@ -1,0 +1,34 @@
+[
+  {
+    "phase": "idle-start",
+    "sub": "",
+    "start": 1792782484.0809321,
+    "end": 1792782544.0820503,
+    "ok": true,
+    "commands": []
+  },
+  {
+    "phase": "cpu-all",
+    "sub": "",
+    "start": 1792782544.0828307,
+    "end": 1792784344.11592,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief",
+        "log_path": "runs/20261024-stock/logs/cpu-all-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "idle-end",
+    "sub": "",
+    "start": 1792784344.1164124,
+    "end": 1792784404.1169698,
+    "ok": true,
+    "commands": []
+  }
+]

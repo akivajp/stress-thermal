@@ -19,7 +19,7 @@ notes: |
 
 phases:
   - name: idle-start
-    duration: 300
+    duration: 60
 
   # 全コア: stress-ng の CPU 演算 (結果を検証する) と行列演算を半々で
   - name: cpu-all
@@ -43,4 +43,4 @@ phases:
       - fio --name=ssd --filename={scratch}/fio.dat --size=8G --offset_increment=8G --numjobs=4 --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime={duration} --group_reporting
 
   - name: idle-end
-    duration: 300
+    duration: 60
