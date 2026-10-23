@@ -1,0 +1,155 @@
+2026-10-24 02:36:52 INFO 出力先: runs/20261024-ppt162-co30-35 (tail -f runs/20261024-ppt162-co30-35/run.log で経過を追える)
+2026-10-24 02:36:52 INFO 予定: 18項目, 合計 83.0分
+2026-10-24 02:36:52 INFO   cpu-all                1800秒  stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu0     180秒  taskset -c 0 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu1     180秒  taskset -c 1 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu2     180秒  taskset -c 2 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu3     180秒  taskset -c 3 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu4     180秒  taskset -c 4 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu5     180秒  taskset -c 5 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu6     180秒  taskset -c 6 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu7     180秒  taskset -c 7 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu8     180秒  taskset -c 8 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu9     180秒  taskset -c 9 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu10    180秒  taskset -c 10 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu11    180秒  taskset -c 11 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu12    180秒  taskset -c 12 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu13    180秒  taskset -c 13 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu14    180秒  taskset -c 14 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   cpu-per-core   cpu15    180秒  taskset -c 15 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 02:36:52 INFO   idle-end                300秒  (アイドル)
+2026-10-24 02:36:52 INFO 開始: cpu-all (1800秒, コマンド1本)
+2026-10-24 02:36:52 INFO   $ stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief
+2026-10-24 02:37:52 INFO cpu-all: Tctl 70℃ | CPU 141W 4774MHz | GPU0 41℃ 20W | GPU1 39℃ 7W | NVMe 57℃ | FAN 1330/1470rpm
+2026-10-24 02:38:52 INFO cpu-all: Tctl 72℃ | CPU 142W 4819MHz | GPU0 40℃ 21W | GPU1 39℃ 7W | NVMe 57℃ | FAN 1395/1570rpm
+2026-10-24 02:39:52 INFO cpu-all: Tctl 72℃ | CPU 141W 4809MHz | GPU0 39℃ 21W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1435/1623rpm
+2026-10-24 02:40:52 INFO cpu-all: Tctl 72℃ | CPU 142W 4858MHz | GPU0 39℃ 20W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1435/1632rpm
+2026-10-24 02:41:53 INFO cpu-all: Tctl 71℃ | CPU 141W 4752MHz | GPU0 39℃ 19W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1395/1560rpm
+2026-10-24 02:42:53 INFO cpu-all: Tctl 72℃ | CPU 142W 4831MHz | GPU0 39℃ 19W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1393/1554rpm
+2026-10-24 02:43:53 INFO cpu-all: Tctl 71℃ | CPU 142W 4827MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1393/1574rpm
+2026-10-24 02:44:53 INFO cpu-all: Tctl 72℃ | CPU 143W 4881MHz | GPU0 38℃ 20W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1395/1552rpm
+2026-10-24 02:45:53 INFO cpu-all: Tctl 72℃ | CPU 143W 4830MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1393/1576rpm
+2026-10-24 02:46:53 INFO cpu-all: Tctl 71℃ | CPU 140W 4735MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1325/1513rpm
+2026-10-24 02:47:53 INFO cpu-all: Tctl 72℃ | CPU 142W 4825MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 57℃ | FAN 1393/1556rpm
+2026-10-24 02:48:53 INFO cpu-all: Tctl 71℃ | CPU 140W 4789MHz | GPU0 38℃ 20W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1340/1518rpm
+2026-10-24 02:49:53 INFO cpu-all: Tctl 71℃ | CPU 142W 4868MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 56℃ | FAN 1393/1564rpm
+2026-10-24 02:50:53 INFO cpu-all: Tctl 71℃ | CPU 140W 4731MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 56℃ | FAN 1393/1576rpm
+2026-10-24 02:51:53 INFO cpu-all: Tctl 70℃ | CPU 141W 4829MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 55℃ | FAN 1325/1509rpm
+2026-10-24 02:52:53 INFO cpu-all: Tctl 71℃ | CPU 142W 4851MHz | GPU0 38℃ 18W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1501rpm
+2026-10-24 02:53:53 INFO cpu-all: Tctl 72℃ | CPU 141W 4829MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 56℃ | FAN 1395/1556rpm
+2026-10-24 02:54:53 INFO cpu-all: Tctl 70℃ | CPU 140W 4786MHz | GPU0 38℃ 19W | GPU1 39℃ 7W | NVMe 55℃ | FAN 1324/1486rpm
+2026-10-24 02:55:53 INFO cpu-all: Tctl 70℃ | CPU 141W 4827MHz | GPU0 38℃ 18W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1507rpm
+2026-10-24 02:56:53 INFO cpu-all: Tctl 71℃ | CPU 142W 4867MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1395/1560rpm
+2026-10-24 02:57:53 INFO cpu-all: Tctl 70℃ | CPU 142W 4822MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 56℃ | FAN 1340/1509rpm
+2026-10-24 02:58:53 INFO cpu-all: Tctl 70℃ | CPU 141W 4799MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1501rpm
+2026-10-24 02:59:53 INFO cpu-all: Tctl 71℃ | CPU 141W 4788MHz | GPU0 38℃ 18W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1505rpm
+2026-10-24 03:00:53 INFO cpu-all: Tctl 70℃ | CPU 140W 4747MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1500rpm
+2026-10-24 03:01:53 INFO cpu-all: Tctl 71℃ | CPU 142W 4786MHz | GPU0 38℃ 20W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1393/1581rpm
+2026-10-24 03:02:53 INFO cpu-all: Tctl 72℃ | CPU 142W 4822MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1440/1637rpm
+2026-10-24 03:03:53 INFO cpu-all: Tctl 70℃ | CPU 141W 4842MHz | GPU0 38℃ 18W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1515rpm
+2026-10-24 03:04:53 INFO cpu-all: Tctl 71℃ | CPU 140W 4798MHz | GPU0 38℃ 18W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1505rpm
+2026-10-24 03:05:53 INFO cpu-all: Tctl 71℃ | CPU 142W 4785MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1325/1522rpm
+2026-10-24 03:06:52 INFO 終了: cpu-all → OK
+2026-10-24 03:06:52 INFO 開始: cpu-per-core/cpu0 (180秒, コマンド1本)
+2026-10-24 03:06:52 INFO   $ taskset -c 0 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:06:53 INFO cpu-per-core/cpu0: Tctl 71℃ | CPU 134W 5432MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 55℃ | FAN 1339/1501rpm
+2026-10-24 03:07:53 INFO cpu-per-core/cpu0: Tctl 58℃ | CPU 44W 5613MHz | GPU0 38℃ 20W | GPU1 38℃ 7W | NVMe 55℃ | FAN 995/1007rpm
+2026-10-24 03:08:53 INFO cpu-per-core/cpu0: Tctl 56℃ | CPU 41W 5684MHz | GPU0 38℃ 19W | GPU1 38℃ 7W | NVMe 56℃ | FAN 967/946rpm
+2026-10-24 03:09:53 INFO 終了: cpu-per-core/cpu0 → OK
+2026-10-24 03:09:53 INFO 開始: cpu-per-core/cpu1 (180秒, コマンド1本)
+2026-10-24 03:09:53 INFO   $ taskset -c 1 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:09:54 INFO cpu-per-core/cpu1: Tctl 56℃ | CPU 41W 5693MHz | GPU0 39℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 967/956rpm
+2026-10-24 03:10:54 INFO cpu-per-core/cpu1: Tctl 54℃ | CPU 41W 5536MHz | GPU0 39℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 928/884rpm
+2026-10-24 03:11:54 INFO cpu-per-core/cpu1: Tctl 54℃ | CPU 41W 5536MHz | GPU0 39℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 928/884rpm
+2026-10-24 03:12:53 INFO 終了: cpu-per-core/cpu1 → OK
+2026-10-24 03:12:53 INFO 開始: cpu-per-core/cpu2 (180秒, コマンド1本)
+2026-10-24 03:12:53 INFO   $ taskset -c 2 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:12:55 INFO cpu-per-core/cpu2: Tctl 54℃ | CPU 41W 5668MHz | GPU0 40℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 928/886rpm
+2026-10-24 03:13:55 INFO cpu-per-core/cpu2: Tctl 56℃ | CPU 40W 5666MHz | GPU0 40℃ 21W | GPU1 38℃ 7W | NVMe 56℃ | FAN 941/891rpm
+2026-10-24 03:14:55 INFO cpu-per-core/cpu2: Tctl 55℃ | CPU 40W 5641MHz | GPU0 40℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 942/895rpm
+2026-10-24 03:15:53 INFO 終了: cpu-per-core/cpu2 → OK
+2026-10-24 03:15:53 INFO 開始: cpu-per-core/cpu3 (180秒, コマンド1本)
+2026-10-24 03:15:53 INFO   $ taskset -c 3 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:15:56 INFO cpu-per-core/cpu3: Tctl 54℃ | CPU 41W 5539MHz | GPU0 40℃ 22W | GPU1 38℃ 7W | NVMe 56℃ | FAN 938/902rpm
+2026-10-24 03:16:56 INFO cpu-per-core/cpu3: Tctl 54℃ | CPU 41W 5545MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 925/902rpm
+2026-10-24 03:17:56 INFO cpu-per-core/cpu3: Tctl 53℃ | CPU 42W 5538MHz | GPU0 40℃ 20W | GPU1 38℃ 6W | NVMe 56℃ | FAN 922/872rpm
+2026-10-24 03:18:53 INFO 終了: cpu-per-core/cpu3 → OK
+2026-10-24 03:18:53 INFO 開始: cpu-per-core/cpu4 (180秒, コマンド1本)
+2026-10-24 03:18:53 INFO   $ taskset -c 4 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:18:56 INFO cpu-per-core/cpu4: Tctl 55℃ | CPU 43W 5537MHz | GPU0 40℃ 22W | GPU1 38℃ 7W | NVMe 56℃ | FAN 933/886rpm
+2026-10-24 03:19:56 INFO cpu-per-core/cpu4: Tctl 56℃ | CPU 41W 5616MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 943/889rpm
+2026-10-24 03:20:56 INFO cpu-per-core/cpu4: Tctl 56℃ | CPU 42W 5665MHz | GPU0 40℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 941/888rpm
+2026-10-24 03:21:53 INFO 終了: cpu-per-core/cpu4 → OK
+2026-10-24 03:21:53 INFO 開始: cpu-per-core/cpu5 (180秒, コマンド1本)
+2026-10-24 03:21:53 INFO   $ taskset -c 5 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:21:56 INFO cpu-per-core/cpu5: Tctl 54℃ | CPU 43W 5680MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 941/900rpm
+2026-10-24 03:22:56 INFO cpu-per-core/cpu5: Tctl 53℃ | CPU 41W 5542MHz | GPU0 40℃ 21W | GPU1 38℃ 7W | NVMe 56℃ | FAN 928/881rpm
+2026-10-24 03:23:56 INFO cpu-per-core/cpu5: Tctl 53℃ | CPU 42W 5544MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 928/875rpm
+2026-10-24 03:24:53 INFO 終了: cpu-per-core/cpu5 → OK
+2026-10-24 03:24:53 INFO 開始: cpu-per-core/cpu6 (180秒, コマンド1本)
+2026-10-24 03:24:53 INFO   $ taskset -c 6 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:24:57 INFO cpu-per-core/cpu6: Tctl 58℃ | CPU 43W 5539MHz | GPU0 41℃ 23W | GPU1 38℃ 7W | NVMe 56℃ | FAN 1021/988rpm
+2026-10-24 03:25:57 INFO cpu-per-core/cpu6: Tctl 58℃ | CPU 41W 5501MHz | GPU0 40℃ 22W | GPU1 38℃ 7W | NVMe 56℃ | FAN 1024/1022rpm
+2026-10-24 03:26:57 INFO cpu-per-core/cpu6: Tctl 58℃ | CPU 43W 5638MHz | GPU0 40℃ 21W | GPU1 38℃ 7W | NVMe 56℃ | FAN 1024/1025rpm
+2026-10-24 03:27:53 INFO 終了: cpu-per-core/cpu6 → OK
+2026-10-24 03:27:53 INFO 開始: cpu-per-core/cpu7 (180秒, コマンド1本)
+2026-10-24 03:27:53 INFO   $ taskset -c 7 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:27:58 INFO cpu-per-core/cpu7: Tctl 56℃ | CPU 45W 5544MHz | GPU0 40℃ 21W | GPU1 38℃ 7W | NVMe 56℃ | FAN 972/989rpm
+2026-10-24 03:28:58 INFO cpu-per-core/cpu7: Tctl 56℃ | CPU 44W 5535MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 969/950rpm
+2026-10-24 03:29:58 INFO cpu-per-core/cpu7: Tctl 56℃ | CPU 42W 5532MHz | GPU0 40℃ 20W | GPU1 38℃ 7W | NVMe 56℃ | FAN 968/947rpm
+2026-10-24 03:30:53 INFO 終了: cpu-per-core/cpu7 → OK
+2026-10-24 03:30:53 INFO 開始: cpu-per-core/cpu8 (180秒, コマンド1本)
+2026-10-24 03:30:53 INFO   $ taskset -c 8 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:30:59 INFO cpu-per-core/cpu8: Tctl 56℃ | CPU 38W 5704MHz | GPU0 40℃ 22W | GPU1 38℃ 7W | NVMe 56℃ | FAN 938/898rpm
+2026-10-24 03:31:59 INFO cpu-per-core/cpu8: Tctl 56℃ | CPU 38W 5701MHz | GPU0 40℃ 20W | GPU1 38℃ 6W | NVMe 56℃ | FAN 942/898rpm
+2026-10-24 03:32:59 INFO cpu-per-core/cpu8: Tctl 56℃ | CPU 44W 5716MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 942/896rpm
+2026-10-24 03:33:53 INFO 終了: cpu-per-core/cpu8 → OK
+2026-10-24 03:33:53 INFO 開始: cpu-per-core/cpu9 (180秒, コマンド1本)
+2026-10-24 03:33:53 INFO   $ taskset -c 9 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:34:00 INFO cpu-per-core/cpu9: Tctl 55℃ | CPU 40W 5724MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 929/886rpm
+2026-10-24 03:35:00 INFO cpu-per-core/cpu9: Tctl 55℃ | CPU 40W 5726MHz | GPU0 40℃ 20W | GPU1 38℃ 6W | NVMe 56℃ | FAN 929/892rpm
+2026-10-24 03:36:00 INFO cpu-per-core/cpu9: Tctl 55℃ | CPU 38W 5730MHz | GPU0 40℃ 20W | GPU1 38℃ 6W | NVMe 56℃ | FAN 929/886rpm
+2026-10-24 03:36:53 INFO 終了: cpu-per-core/cpu9 → OK
+2026-10-24 03:36:53 INFO 開始: cpu-per-core/cpu10 (180秒, コマンド1本)
+2026-10-24 03:36:53 INFO   $ taskset -c 10 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:37:01 INFO cpu-per-core/cpu10: Tctl 57℃ | CPU 47W 5699MHz | GPU0 40℃ 22W | GPU1 38℃ 7W | NVMe 56℃ | FAN 967/949rpm
+2026-10-24 03:38:01 INFO cpu-per-core/cpu10: Tctl 56℃ | CPU 43W 5706MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 968/949rpm
+2026-10-24 03:39:01 INFO cpu-per-core/cpu10: Tctl 57℃ | CPU 44W 5707MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 968/942rpm
+2026-10-24 03:39:53 INFO 終了: cpu-per-core/cpu10 → OK
+2026-10-24 03:39:53 INFO 開始: cpu-per-core/cpu11 (180秒, コマンド1本)
+2026-10-24 03:39:53 INFO   $ taskset -c 11 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:40:02 INFO cpu-per-core/cpu11: Tctl 56℃ | CPU 41W 5703MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 968/948rpm
+2026-10-24 03:41:02 INFO cpu-per-core/cpu11: Tctl 56℃ | CPU 44W 5704MHz | GPU0 40℃ 22W | GPU1 38℃ 7W | NVMe 56℃ | FAN 968/950rpm
+2026-10-24 03:42:02 INFO cpu-per-core/cpu11: Tctl 56℃ | CPU 46W 5703MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 963/939rpm
+2026-10-24 03:42:53 INFO 終了: cpu-per-core/cpu11 → OK
+2026-10-24 03:42:53 INFO 開始: cpu-per-core/cpu12 (180秒, コマンド1本)
+2026-10-24 03:42:53 INFO   $ taskset -c 12 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:43:03 INFO cpu-per-core/cpu12: Tctl 57℃ | CPU 44W 5700MHz | GPU0 40℃ 21W | GPU1 38℃ 7W | NVMe 56℃ | FAN 999/986rpm
+2026-10-24 03:44:03 INFO cpu-per-core/cpu12: Tctl 57℃ | CPU 46W 5695MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 990/971rpm
+2026-10-24 03:45:03 INFO cpu-per-core/cpu12: Tctl 57℃ | CPU 44W 5703MHz | GPU0 40℃ 20W | GPU1 38℃ 6W | NVMe 56℃ | FAN 1009/984rpm
+2026-10-24 03:45:53 INFO 終了: cpu-per-core/cpu12 → OK
+2026-10-24 03:45:53 INFO 開始: cpu-per-core/cpu13 (180秒, コマンド1本)
+2026-10-24 03:45:53 INFO   $ taskset -c 13 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:46:04 INFO cpu-per-core/cpu13: Tctl 57℃ | CPU 45W 5704MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 968/941rpm
+2026-10-24 03:47:04 INFO cpu-per-core/cpu13: Tctl 57℃ | CPU 43W 5713MHz | GPU0 40℃ 22W | GPU1 38℃ 6W | NVMe 56℃ | FAN 968/948rpm
+2026-10-24 03:48:04 INFO cpu-per-core/cpu13: Tctl 56℃ | CPU 43W 5715MHz | GPU0 40℃ 20W | GPU1 38℃ 6W | NVMe 56℃ | FAN 969/941rpm
+2026-10-24 03:48:53 INFO 終了: cpu-per-core/cpu13 → OK
+2026-10-24 03:48:53 INFO 開始: cpu-per-core/cpu14 (180秒, コマンド1本)
+2026-10-24 03:48:53 INFO   $ taskset -c 14 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:49:05 INFO cpu-per-core/cpu14: Tctl 59℃ | CPU 45W 5687MHz | GPU0 40℃ 21W | GPU1 38℃ 6W | NVMe 56℃ | FAN 1052/1068rpm
+2026-10-24 03:50:05 INFO cpu-per-core/cpu14: Tctl 59℃ | CPU 45W 5683MHz | GPU0 40℃ 21W | GPU1 37℃ 6W | NVMe 56℃ | FAN 1031/1072rpm
+2026-10-24 03:51:05 INFO cpu-per-core/cpu14: Tctl 59℃ | CPU 44W 5714MHz | GPU0 40℃ 21W | GPU1 37℃ 6W | NVMe 56℃ | FAN 1050/1067rpm
+2026-10-24 03:51:53 INFO 終了: cpu-per-core/cpu14 → OK
+2026-10-24 03:51:53 INFO 開始: cpu-per-core/cpu15 (180秒, コマンド1本)
+2026-10-24 03:51:53 INFO   $ taskset -c 15 stress-ng --cpu 1 --cpu-method all --verify --timeout 180s --metrics-brief
+2026-10-24 03:52:06 INFO cpu-per-core/cpu15: Tctl 59℃ | CPU 45W 5679MHz | GPU0 40℃ 20W | GPU1 37℃ 6W | NVMe 56℃ | FAN 1034/1055rpm
+2026-10-24 03:53:06 INFO cpu-per-core/cpu15: Tctl 59℃ | CPU 46W 5696MHz | GPU0 40℃ 22W | GPU1 37℃ 6W | NVMe 56℃ | FAN 1024/1030rpm
+2026-10-24 03:54:06 INFO cpu-per-core/cpu15: Tctl 59℃ | CPU 45W 5700MHz | GPU0 40℃ 20W | GPU1 37℃ 6W | NVMe 55℃ | FAN 1024/1032rpm
+2026-10-24 03:54:53 INFO 終了: cpu-per-core/cpu15 → OK
+2026-10-24 03:54:53 INFO 開始: idle-end (300秒, コマンド0本)
+2026-10-24 03:55:07 INFO idle-end: Tctl 50℃ | CPU 23W 4397MHz | GPU0 39℃ 22W | GPU1 37℃ 7W | NVMe 55℃ | FAN 892/812rpm
+2026-10-24 03:56:07 INFO idle-end: Tctl 48℃ | CPU 24W 4396MHz | GPU0 40℃ 21W | GPU1 37℃ 6W | NVMe 55℃ | FAN 872/781rpm
+2026-10-24 03:57:07 INFO idle-end: Tctl 48℃ | CPU 25W 3639MHz | GPU0 40℃ 22W | GPU1 37℃ 6W | NVMe 55℃ | FAN 872/792rpm
+2026-10-24 03:58:07 INFO idle-end: Tctl 48℃ | CPU 23W 3666MHz | GPU0 40℃ 21W | GPU1 37℃ 6W | NVMe 55℃ | FAN 872/789rpm
+2026-10-24 03:59:07 INFO idle-end: Tctl 47℃ | CPU 23W 4408MHz | GPU0 40℃ 21W | GPU1 37℃ 6W | NVMe 55℃ | FAN 872/791rpm
+2026-10-24 03:59:53 INFO 終了: idle-end → OK

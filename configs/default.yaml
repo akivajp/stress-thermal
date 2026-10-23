@@ -9,6 +9,7 @@ cpu_temp_limit: 85                  # BIOS で設定した CPU の温度上限 (
 scratch_dir: ~/.cache/stress-thermal  # SSD 負荷用のファイル置き場 (初回に 32GiB 書き込む)
 
 notes: |
+  BIOS (2026-10-24 02:30頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -30 / CCD1 -35 / 温度上限 85℃
   BIOS (2026-10-21 23:10頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -25 / CCD1 -30 / 温度上限 85℃
   BIOS (2026-10-21 13:16頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 142W / TDC 110A / EDC 170A) / Curve Optimizer -20 (PBO の項目) / 温度上限 85℃。CO -40 (PBO の項目) は 13:10 に cpu2 の単コア負荷中にフリーズしたため
   BIOS (2026-10-21 12:30頃〜): Performance Preset を「自動」に戻し、PBO Limits Manual (PPT 142W / TDC 110A / EDC 170A)・Curve Optimizer -40・温度上限 85℃ をプリセット以外の項目で設定

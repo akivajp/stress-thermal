@@ -1,0 +1,41 @@
+interval: 1.0
+grace: 60
+cpu_temp_limit: 85
+scratch_dir: ~/.cache/stress-thermal
+notes: 'BIOS (2026-10-24 02:30頃〜): Performance Preset 自動 / PBO Limits Manual (PPT
+  162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -30 / CCD1 -35 /
+  温度上限 85℃
+
+  BIOS (2026-10-21 23:10頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W /
+  TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -25 / CCD1 -30 / 温度上限 85℃
+
+  BIOS (2026-10-21 13:16頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 142W /
+  TDC 110A / EDC 170A) / Curve Optimizer -20 (PBO の項目) / 温度上限 85℃。CO -40 (PBO の項目)
+  は 13:10 に cpu2 の単コア負荷中にフリーズしたため
+
+  BIOS (2026-10-21 12:30頃〜): Performance Preset を「自動」に戻し、PBO Limits Manual (PPT 142W
+  / TDC 110A / EDC 170A)・Curve Optimizer -40・温度上限 85℃ をプリセット以外の項目で設定
+
+  BIOS (2026-10-21 12:13〜): ECO モード 105W / PBO Advanced, PBO Limits Manual (PPT 142W
+  / TDC 110A / EDC 170A) / Curve Optimizer 全コア -40 / 温度上限 85℃ (前回から変更なしの前提)
+
+  BIOS (2026-10-21 午前): ECO モード 105W / Curve Optimizer 全コア -40 / 温度上限 (Tjmax) 85℃
+  (前回から変更なしの前提)
+
+  BIOS (2026-10-20): TDP 105W 制限 / PBO 有効 / 温度上限 (Tjmax) 85℃ / Curve Optimizer 全コア
+  -30
+
+  '
+phases:
+- name: cpu-all
+  duration: 1800
+  commands:
+  - stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout {duration}s
+    --metrics-brief
+- name: cpu-per-core
+  per_core: 180
+  command: taskset -c {cpu} stress-ng --cpu 1 --cpu-method all --verify --timeout
+    {duration}s --metrics-brief
+- name: idle-end
+  duration: 300
+scale: 1.0
