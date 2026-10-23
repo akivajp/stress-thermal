@@ -1,0 +1,34 @@
+[
+  {
+    "phase": "idle-start",
+    "sub": "",
+    "start": 1792785058.0966766,
+    "end": 1792785118.0977545,
+    "ok": true,
+    "commands": []
+  },
+  {
+    "phase": "cpu-all",
+    "sub": "",
+    "start": 1792785118.0985775,
+    "end": 1792786918.115645,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1800s --metrics-brief",
+        "log_path": "runs/20261024-ppt162-co0/logs/cpu-all-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "idle-end",
+    "sub": "",
+    "start": 1792786918.1161382,
+    "end": 1792786978.1167135,
+    "ok": true,
+    "commands": []
+  }
+]
