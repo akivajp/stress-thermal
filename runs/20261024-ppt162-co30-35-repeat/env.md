@@ -11,7 +11,7 @@
 
 ## 設定メモ
 
-BIOS (2026-10-24 04:48頃〜, CO なしの比較用): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer 0 / 0 / 温度上限 85℃
+BIOS (2026-10-24 04:48頃〜): CO を無効にしたつもりが、実際は CO CCD0 -30 / CCD1 -35 のまま (02:30〜 と同じ設定の再測定)
 BIOS (2026-10-24 02:30頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -30 / CCD1 -35 / 温度上限 85℃
 BIOS (2026-10-21 23:10頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -25 / CCD1 -30 / 温度上限 85℃
 BIOS (2026-10-21 13:16頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 142W / TDC 110A / EDC 170A) / Curve Optimizer -20 (PBO の項目) / 温度上限 85℃。CO -40 (PBO の項目) は 13:10 に cpu2 の単コア負荷中にフリーズしたため
