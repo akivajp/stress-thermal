@@ -9,6 +9,7 @@ cpu_temp_limit: 85                  # BIOS で設定した CPU の温度上限 (
 scratch_dir: ~/.cache/stress-thermal  # SSD 負荷用のファイル置き場 (初回に 32GiB 書き込む)
 
 notes: |
+  BIOS (2026-10-25 22:27〜, 採用): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -30 / CCD1 -35 / 温度上限 85℃。-35 / -40 は常用約40時間で固まったため戻した
   BIOS (2026-10-24 06:05頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -35 / CCD1 -40 / 温度上限 85℃
   BIOS (2026-10-24 05:28頃〜, CO なしの比較用): Performance Preset 自動 / PBO Limits Manual (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer 無効 / 温度上限 85℃
   BIOS (2026-10-24 04:48頃〜): CO を無効にしたつもりが、実際は CO CCD0 -30 / CCD1 -35 のまま (02:30〜 と同じ設定の再測定)
