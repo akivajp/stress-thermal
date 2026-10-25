@@ -1,0 +1,55 @@
+[
+  {
+    "phase": "idle-start",
+    "sub": "",
+    "start": 1792947027.77753,
+    "end": 1792947087.7785058,
+    "ok": true,
+    "commands": []
+  },
+  {
+    "phase": "combined",
+    "sub": "",
+    "start": 1792947087.77924,
+    "end": 1792947697.2374253,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 600s --metrics-brief",
+        "log_path": "runs/20261026-combined10/logs/combined-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 600",
+        "log_path": "runs/20261026-combined10/logs/combined-1.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 600",
+        "log_path": "runs/20261026-combined10/logs/combined-2.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "fio --name=ssd --filename=/home/akiva/.cache/stress-thermal/fio.dat --size=8G --offset_increment=8G --numjobs=4 --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime=600 --group_reporting",
+        "log_path": "runs/20261026-combined10/logs/combined-3.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "idle-end",
+    "sub": "",
+    "start": 1792947697.2380974,
+    "end": 1792947757.2386324,
+    "ok": true,
+    "commands": []
+  }
+]

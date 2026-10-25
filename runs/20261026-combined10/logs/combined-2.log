@@ -1,0 +1,23 @@
+$ uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 600
+/home/akiva/ghq/github.com/akivajp/stress-thermal/.venv/lib/python3.13/site-packages/torch/_subclasses/functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+device=NVIDIA RTX 4000 Ada Generation size=8192 duration=600.0s
+    32s  62.7 TFLOPS
+    65s  59.6 TFLOPS
+    95s  58.2 TFLOPS
+   126s  57.2 TFLOPS
+   157s  56.6 TFLOPS
+   188s  56.2 TFLOPS
+   220s  55.6 TFLOPS
+   252s  55.3 TFLOPS
+   283s  55.2 TFLOPS
+   315s  55.1 TFLOPS
+   347s  54.9 TFLOPS
+   380s  54.8 TFLOPS
+   412s  54.7 TFLOPS
+   444s  54.6 TFLOPS
+   476s  54.5 TFLOPS
+   508s  54.5 TFLOPS
+   541s  54.3 TFLOPS
+   573s  54.2 TFLOPS
+done iters=30600 mismatches=0

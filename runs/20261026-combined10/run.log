@@ -1,0 +1,26 @@
+2026-10-26 01:50:27 INFO 出力先: runs/20261026-combined10 (tail -f runs/20261026-combined10/run.log で経過を追える)
+2026-10-26 01:50:27 INFO 予定: 3項目, 合計 12.0分
+2026-10-26 01:50:27 INFO   idle-start               60秒  (アイドル)
+2026-10-26 01:50:27 INFO   combined                600秒  stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 600s --metrics-brief ; uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 600 ; uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 600 ; fio --name=ssd --filename=/home/akiva/.cache/stress-thermal/fio.dat --size=8G --offset_increment=8G --numjobs=4 --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime=600 --group_reporting
+2026-10-26 01:50:27 INFO   idle-end                 60秒  (アイドル)
+2026-10-26 01:50:27 INFO 開始: idle-start (60秒, コマンド0本)
+2026-10-26 01:51:27 INFO 終了: idle-start → OK
+2026-10-26 01:51:27 INFO 開始: combined (600秒, コマンド4本)
+2026-10-26 01:51:27 INFO   $ stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 600s --metrics-brief
+2026-10-26 01:51:27 INFO   $ uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 600
+2026-10-26 01:51:27 INFO   $ uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 600
+2026-10-26 01:51:27 INFO   $ fio --name=ssd --filename=/home/akiva/.cache/stress-thermal/fio.dat --size=8G --offset_increment=8G --numjobs=4 --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime=600 --group_reporting
+2026-10-26 01:51:27 INFO combined: Tctl 48℃ | CPU 24W 4395MHz | GPU0 42℃ 19W | GPU1 39℃ 6W | NVMe 57℃ | FAN 873/788rpm
+2026-10-26 01:52:27 INFO combined: Tctl 77℃ | CPU 145W 4680MHz | GPU0 70℃ 450W | GPU1 77℃ 130W | NVMe 65℃ | FAN 1604/1843rpm
+2026-10-26 01:53:27 INFO combined: Tctl 80℃ | CPU 143W 4757MHz | GPU0 73℃ 450W | GPU1 84℃ 130W | NVMe 67℃ | FAN 1754/2016rpm
+2026-10-26 01:54:27 INFO combined: Tctl 84℃ | CPU 143W 4599MHz | GPU0 74℃ 450W | GPU1 86℃ 130W | NVMe 69℃ | FAN 1756/2033rpm
+2026-10-26 01:55:27 INFO combined: Tctl 84℃ | CPU 143W 4726MHz | GPU0 74℃ 450W | GPU1 88℃ 130W | NVMe 71℃ | FAN 1759/2061rpm
+2026-10-26 01:56:27 INFO combined: Tctl 86℃ | CPU 142W 4622MHz | GPU0 75℃ 450W | GPU1 88℃ 130W | NVMe 73℃ | FAN 1762/2040rpm
+2026-10-26 01:57:27 INFO combined: Tctl 86℃ | CPU 143W 4578MHz | GPU0 75℃ 450W | GPU1 89℃ 130W | NVMe 75℃ | FAN 1762/2054rpm
+2026-10-26 01:58:28 INFO combined: Tctl 85℃ | CPU 143W 4587MHz | GPU0 75℃ 450W | GPU1 89℃ 130W | NVMe 75℃ | FAN 1764/2065rpm
+2026-10-26 01:59:28 INFO combined: Tctl 86℃ | CPU 139W 4400MHz | GPU0 76℃ 450W | GPU1 90℃ 130W | NVMe 76℃ | FAN 1767/2072rpm
+2026-10-26 02:00:28 INFO combined: Tctl 86℃ | CPU 141W 4600MHz | GPU0 76℃ 450W | GPU1 90℃ 130W | NVMe 77℃ | FAN 1764/2065rpm
+2026-10-26 02:01:37 INFO 終了: combined → OK
+2026-10-26 02:01:37 INFO 開始: idle-end (60秒, コマンド0本)
+2026-10-26 02:01:37 INFO idle-end: Tctl 82℃ | CPU 51W 5290MHz | GPU0 64℃ 248W | GPU1 91℃ 130W | NVMe 72℃ | FAN 1764/2083rpm
+2026-10-26 02:02:37 INFO 終了: idle-end → OK

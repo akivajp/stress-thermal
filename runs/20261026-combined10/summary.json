@@ -1,0 +1,73 @@
+{
+  "metrics": {
+    "idle-start": {
+      "Tctl 最高": "48℃",
+      "CCD 最高": "52℃",
+      "上限付近の割合": "0%",
+      "CPU 電力 最大/平均": "34/24W",
+      "CPU クロック最高": "5043MHz",
+      "GPU0 温度/電力": "42℃/20W",
+      "GPU0 制限": "",
+      "GPU1 温度/電力": "39℃/6W",
+      "GPU1 制限": "",
+      "nvme0 最高": "56℃",
+      "nvme1 最高": "57℃",
+      "nvme2 最高": "43℃",
+      "DIMM 最高": "42℃",
+      "MB Thermistor 14": "56℃",
+      "MB Thermistor 15": "39℃",
+      "fan1 最高/平均": "874/873rpm",
+      "fan3 最高/平均": "789/783rpm"
+    },
+    "combined": {
+      "Tctl 最高": "86℃",
+      "CCD 最高": "87℃",
+      "上限付近の割合": "59%",
+      "CPU 電力 最大/平均": "148/141W",
+      "CPU クロック最高": "5290MHz",
+      "GPU0 温度/電力": "76℃/459W",
+      "GPU0 制限": "SwPowerCap",
+      "GPU1 温度/電力": "91℃/131W",
+      "GPU1 制限": "SwPowerCap",
+      "nvme0 最高": "77℃",
+      "nvme1 最高": "77℃",
+      "nvme2 最高": "70℃",
+      "DIMM 最高": "65℃",
+      "MB Thermistor 14": "69℃",
+      "MB Thermistor 15": "75℃",
+      "fan1 最高/平均": "1767/1715rpm",
+      "fan3 最高/平均": "2101/2002rpm"
+    },
+    "idle-end": {
+      "Tctl 最高": "80℃",
+      "CCD 最高": "63℃",
+      "上限付近の割合": "0%",
+      "CPU 電力 最大/平均": "44/27W",
+      "CPU クロック最高": "4414MHz",
+      "GPU0 温度/電力": "63℃/98W",
+      "GPU0 制限": "",
+      "GPU1 温度/電力": "82℃/87W",
+      "GPU1 制限": "",
+      "nvme0 最高": "72℃",
+      "nvme1 最高": "72℃",
+      "nvme2 最高": "67℃",
+      "DIMM 最高": "64℃",
+      "MB Thermistor 14": "70℃",
+      "MB Thermistor 15": "68℃",
+      "fan1 最高/平均": "1767/1304rpm",
+      "fan3 最高/平均": "2105/1465rpm"
+    }
+  },
+  "verdict": {
+    "idle-start": "OK",
+    "combined": "OK",
+    "idle-end": "OK"
+  },
+  "nvme_before": {},
+  "hw_errors_boot_before_run": 0,
+  "aborted": false,
+  "start": "2026-10-26T01:50:27",
+  "end": "2026-10-26T02:02:37",
+  "hw_errors": [],
+  "nvme_after": {}
+}

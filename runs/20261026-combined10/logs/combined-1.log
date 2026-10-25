@@ -1,0 +1,24 @@
+$ uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 600
+/home/akiva/ghq/github.com/akivajp/stress-thermal/.venv/lib/python3.13/site-packages/torch/_subclasses/functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+device=NVIDIA GeForce RTX 4090 size=8192 duration=600.0s
+    30s  153.4 TFLOPS
+    60s  152.2 TFLOPS
+    91s  151.6 TFLOPS
+   121s  151.0 TFLOPS
+   152s  150.6 TFLOPS
+   183s  150.5 TFLOPS
+   214s  150.4 TFLOPS
+   244s  150.3 TFLOPS
+   275s  150.3 TFLOPS
+   306s  150.0 TFLOPS
+   337s  150.0 TFLOPS
+   367s  150.0 TFLOPS
+   398s  149.9 TFLOPS
+   429s  149.7 TFLOPS
+   460s  149.7 TFLOPS
+   491s  149.7 TFLOPS
+   522s  149.6 TFLOPS
+   552s  149.6 TFLOPS
+   583s  149.6 TFLOPS
+done iters=82200 mismatches=0

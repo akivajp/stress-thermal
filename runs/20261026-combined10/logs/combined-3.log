@@ -1,0 +1,32 @@
+$ fio --name=ssd --filename=/home/akiva/.cache/stress-thermal/fio.dat --size=8G --offset_increment=8G --numjobs=4 --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime=600 --group_reporting
+ssd: (g=0): rw=read, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=io_uring, iodepth=32
+...
+fio-3.41
+Starting 4 processes
+
+ssd: (groupid=0, jobs=4): err= 0: pid=48626: Mon Oct 26 02:01:28 2026
+  read: IOPS=11.0k, BW=10.7GiB/s (11.5GB/s)(6449GiB/600009msec)
+    slat (nsec): min=300, max=30887k, avg=30087.08, stdev=116132.41
+    clat (nsec): min=1312, max=108008k, avg=11598228.11, stdev=9543501.35
+     lat (usec): min=554, max=108009, avg=11628.32, stdev=9542.62
+    clat percentiles (usec):
+     |  1.00th=[ 2999],  5.00th=[ 4359], 10.00th=[ 5473], 20.00th=[ 6652],
+     | 30.00th=[ 7570], 40.00th=[ 8225], 50.00th=[ 8848], 60.00th=[ 9372],
+     | 70.00th=[10552], 80.00th=[12649], 90.00th=[21890], 95.00th=[38011],
+     | 99.00th=[47973], 99.50th=[51119], 99.90th=[58983], 99.95th=[67634],
+     | 99.99th=[76022]
+   bw (  MiB/s): min= 6256, max=21576, per=100.00%, avg=11008.48, stdev=559.08, samples=4796
+   iops        : min= 6256, max=21576, avg=11008.42, stdev=559.08, samples=4796
+  lat (usec)   : 2=0.01%, 10=0.01%, 20=0.01%, 50=0.01%, 100=0.01%
+  lat (usec)   : 250=0.01%, 500=0.01%, 750=0.01%, 1000=0.01%
+  lat (msec)   : 2=0.06%, 4=3.58%, 10=62.63%, 20=23.36%, 50=9.76%
+  lat (msec)   : 100=0.60%, 250=0.01%
+  cpu          : usr=0.27%, sys=0.64%, ctx=6136538, majf=0, minf=46
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=100.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.1%, 64=0.0%, >=64=0.0%
+     issued rwts: total=6604138,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=32
+
+Run status group 0 (all jobs):
+   READ: bw=10.7GiB/s (11.5GB/s), 10.7GiB/s-10.7GiB/s (11.5GB/s-11.5GB/s), io=6449GiB (6925GB), run=600009-600009msec

@@ -1,0 +1,60 @@
+interval: 1.0
+grace: 60
+cpu_temp_limit: 85
+scratch_dir: ~/.cache/stress-thermal
+notes: '(2026-10-26 01:50頃) 採用設定 (PPT 162W / TDC 120A / EDC 180A、CO CCD0 -30 / CCD1
+  -35、温度上限 85℃) で CPU + GPU 2枚 + SSD の同時負荷を10分。システムモニター rigtop のスクリーンショット用・ワットチェッカーで壁の電力を目視。asr4u
+  は稼働中
+
+  BIOS (2026-10-25 22:27〜, 採用): Performance Preset 自動 / PBO Limits Manual (PPT 162W
+  / TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -30 / CCD1 -35 / 温度上限
+  85℃。-35 / -40 は常用約40時間で固まったため戻した
+
+  BIOS (2026-10-24 06:05頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W /
+  TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -35 / CCD1 -40 / 温度上限 85℃
+
+  BIOS (2026-10-24 05:28頃〜, CO なしの比較用): Performance Preset 自動 / PBO Limits Manual
+  (PPT 162W / TDC 120A / EDC 180A) / Curve Optimizer 無効 / 温度上限 85℃
+
+  BIOS (2026-10-24 04:48頃〜): CO を無効にしたつもりが、実際は CO CCD0 -30 / CCD1 -35 のまま (02:30〜
+  と同じ設定の再測定)
+
+  BIOS (2026-10-24 02:30頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W /
+  TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -30 / CCD1 -35 / 温度上限 85℃
+
+  BIOS (2026-10-21 23:10頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 162W /
+  TDC 120A / EDC 180A) / Curve Optimizer CCD0 (3D V-Cache) -25 / CCD1 -30 / 温度上限 85℃
+
+  BIOS (2026-10-21 13:16頃〜): Performance Preset 自動 / PBO Limits Manual (PPT 142W /
+  TDC 110A / EDC 170A) / Curve Optimizer -20 (PBO の項目) / 温度上限 85℃。CO -40 (PBO の項目)
+  は 13:10 に cpu2 の単コア負荷中にフリーズしたため
+
+  BIOS (2026-10-21 12:30頃〜): Performance Preset を「自動」に戻し、PBO Limits Manual (PPT 142W
+  / TDC 110A / EDC 170A)・Curve Optimizer -40・温度上限 85℃ をプリセット以外の項目で設定
+
+  BIOS (2026-10-21 12:13〜): ECO モード 105W / PBO Advanced, PBO Limits Manual (PPT 142W
+  / TDC 110A / EDC 170A) / Curve Optimizer 全コア -40 / 温度上限 85℃ (前回から変更なしの前提)
+
+  BIOS (2026-10-21 午前): ECO モード 105W / Curve Optimizer 全コア -40 / 温度上限 (Tjmax) 85℃
+  (前回から変更なしの前提)
+
+  BIOS (2026-10-20): TDP 105W 制限 / PBO 有効 / 温度上限 (Tjmax) 85℃ / Curve Optimizer 全コア
+  -30
+
+  '
+phases:
+- name: idle-start
+  duration: 60
+- name: combined
+  duration: 600
+  commands:
+  - stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout {duration}s
+    --metrics-brief
+  - uv run --extra gpu python scripts/gpu_load.py --device 0 --duration {duration}
+  - uv run --extra gpu python scripts/gpu_load.py --device 1 --duration {duration}
+  - fio --name=ssd --filename={scratch}/fio.dat --size=8G --offset_increment=8G --numjobs=4
+    --rw=read --bs=1M --iodepth=32 --ioengine=io_uring --direct=1 --time_based --runtime={duration}
+    --group_reporting
+- name: idle-end
+  duration: 60
+scale: 1.0
