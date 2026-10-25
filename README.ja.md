@@ -38,6 +38,28 @@ uv run stress-thermal --summarize runs/<日時>     # 集計のやり直し
 
 どれか1つでもあれば NG (終了コード 1)。
 
+## GPU の電力上限ごとの性能 (`scripts/gpu_power_sweep.sh`)
+
+```sh
+scripts/gpu_power_sweep.sh --help
+scripts/gpu_power_sweep.sh -d 0 -t 120 450 400 350 300 250 200   # sudo nvidia-smi -pl をパスワードなしで使える設定が要る
+```
+
+電力上限を段階的に変えながら FP16 の行列積 (`scripts/gpu_load.py`) を流し、性能・電力・温度・クロックを記録する。終了時 (中断を含む) は元の電力上限に戻す。
+
+RTX 4090 (`runs/20261026-gpu0-power-sweep/`、各2分):
+
+| 電力上限 | TFLOPS | 450W 比 | TFLOPS/W | 温度 | SM クロック |
+|---:|---:|---:|---:|---:|---:|
+| 450W | 151.6 | 100% | 0.34 | 73℃ | 2334MHz |
+| 400W | 142.8 | 94% | 0.36 | 70℃ | 2208MHz |
+| 350W | 128.9 | 85% | 0.37 | 67℃ | 1985MHz |
+| 300W | 106.7 | 70% | 0.36 | 63℃ | 1658MHz |
+| 250W | 84.1 | 55% | 0.34 | 60℃ | 1294MHz |
+| 200W | 61.3 | 40% | 0.31 | 57℃ | 944MHz |
+
+計算で頭打ちになる負荷では、性能はほぼ電力に比例して落ちる (電力あたりの性能は 350W 付近で最大だが差は小さい)。
+
 ## 計測結果 (Ryzen 9 9950X3D / ASRock X870 Taichi Creator / 空冷)
 
 BIOS で電力上限と Curve Optimizer (CO) を詰めていった記録。各 `runs/<名前>/summary.md` に詳細がある。

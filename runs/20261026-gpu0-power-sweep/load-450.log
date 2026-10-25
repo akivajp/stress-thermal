@@ -1,0 +1,7 @@
+/home/akiva/ghq/github.com/akivajp/stress-thermal/.venv/lib/python3.13/site-packages/torch/_subclasses/functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+device=NVIDIA GeForce RTX 4090 size=8192 duration=120.0s
+    30s  153.1 TFLOPS
+    61s  151.9 TFLOPS
+    91s  151.3 TFLOPS
+done iters=16600 mismatches=0
