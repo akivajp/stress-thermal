@@ -1,0 +1,36 @@
+2026-11-09 11:31:26 INFO 出力先: runs/20261109-newfans-cpugpu20 (tail -f runs/20261109-newfans-cpugpu20/run.log で経過を追える)
+2026-11-09 11:31:26 INFO 予定: 3項目, 合計 23.0分
+2026-11-09 11:31:26 INFO   idle-start               60秒  (アイドル)
+2026-11-09 11:31:26 INFO   cpu-gpu                1200秒  stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1200s --metrics-brief ; uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 1200 ; uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 1200
+2026-11-09 11:31:26 INFO   idle-end                120秒  (アイドル)
+2026-11-09 11:31:26 INFO 開始: idle-start (60秒, コマンド0本)
+2026-11-09 11:32:26 INFO 終了: idle-start → OK
+2026-11-09 11:32:26 INFO 開始: cpu-gpu (1200秒, コマンド3本)
+2026-11-09 11:32:26 INFO   $ stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1200s --metrics-brief
+2026-11-09 11:32:26 INFO   $ uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 1200
+2026-11-09 11:32:26 INFO   $ uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 1200
+2026-11-09 11:32:26 INFO cpu-gpu: Tctl 45℃ | CPU 24W 4115MHz | GPU0 55℃ 35W | GPU1 43℃ 7W | NVMe 62℃ | FAN 849/621/733rpm
+2026-11-09 11:33:26 INFO cpu-gpu: Tctl 86℃ | CPU 182W 4953MHz | GPU0 74℃ 450W | GPU1 82℃ 130W | NVMe 61℃ | FAN 1756/1426/733rpm
+2026-11-09 11:34:26 INFO cpu-gpu: Tctl 86℃ | CPU 162W 4813MHz | GPU0 76℃ 450W | GPU1 89℃ 130W | NVMe 61℃ | FAN 1759/1466/774rpm
+2026-11-09 11:35:26 INFO cpu-gpu: Tctl 86℃ | CPU 166W 4807MHz | GPU0 77℃ 450W | GPU1 91℃ 130W | NVMe 62℃ | FAN 1759/1466/816rpm
+2026-11-09 11:36:26 INFO cpu-gpu: Tctl 86℃ | CPU 155W 4684MHz | GPU0 78℃ 450W | GPU1 92℃ 130W | NVMe 63℃ | FAN 1762/1468/862rpm
+2026-11-09 11:37:26 INFO cpu-gpu: Tctl 86℃ | CPU 153W 4675MHz | GPU0 78℃ 448W | GPU1 92℃ 130W | NVMe 64℃ | FAN 1764/1470/889rpm
+2026-11-09 11:38:26 INFO cpu-gpu: Tctl 86℃ | CPU 151W 4643MHz | GPU0 78℃ 450W | GPU1 92℃ 130W | NVMe 65℃ | FAN 1764/1476/915rpm
+2026-11-09 11:39:26 INFO cpu-gpu: Tctl 86℃ | CPU 154W 4706MHz | GPU0 78℃ 451W | GPU1 92℃ 130W | NVMe 65℃ | FAN 1764/1474/926rpm
+2026-11-09 11:40:26 INFO cpu-gpu: Tctl 86℃ | CPU 148W 4470MHz | GPU0 77℃ 449W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1767/1470/956rpm
+2026-11-09 11:41:26 INFO cpu-gpu: Tctl 86℃ | CPU 148W 4672MHz | GPU0 78℃ 450W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1767/1435/956rpm
+2026-11-09 11:42:26 INFO cpu-gpu: Tctl 86℃ | CPU 152W 4679MHz | GPU0 78℃ 449W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1767/1479/972rpm
+2026-11-09 11:43:26 INFO cpu-gpu: Tctl 86℃ | CPU 151W 4625MHz | GPU0 78℃ 450W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1767/1433/970rpm
+2026-11-09 11:44:26 INFO cpu-gpu: Tctl 86℃ | CPU 145W 4587MHz | GPU0 78℃ 450W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1769/1435/971rpm
+2026-11-09 11:45:26 INFO cpu-gpu: Tctl 86℃ | CPU 145W 4520MHz | GPU0 78℃ 451W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1769/1474/1000rpm
+2026-11-09 11:46:26 INFO cpu-gpu: Tctl 86℃ | CPU 149W 4607MHz | GPU0 78℃ 449W | GPU1 92℃ 130W | NVMe 66℃ | FAN 1767/1431/997rpm
+2026-11-09 11:47:26 INFO cpu-gpu: Tctl 86℃ | CPU 137W 4586MHz | GPU0 78℃ 449W | GPU1 92℃ 130W | NVMe 67℃ | FAN 1767/1476/997rpm
+2026-11-09 11:48:26 INFO cpu-gpu: Tctl 86℃ | CPU 147W 4521MHz | GPU0 78℃ 449W | GPU1 92℃ 130W | NVMe 67℃ | FAN 1769/1433/1000rpm
+2026-11-09 11:49:26 INFO cpu-gpu: Tctl 86℃ | CPU 148W 4678MHz | GPU0 78℃ 450W | GPU1 92℃ 130W | NVMe 67℃ | FAN 1767/1468/1001rpm
+2026-11-09 11:50:26 INFO cpu-gpu: Tctl 85℃ | CPU 136W 4326MHz | GPU0 78℃ 449W | GPU1 92℃ 130W | NVMe 67℃ | FAN 1769/1476/1000rpm
+2026-11-09 11:51:27 INFO cpu-gpu: Tctl 85℃ | CPU 143W 4443MHz | GPU0 78℃ 449W | GPU1 92℃ 130W | NVMe 67℃ | FAN 1769/1477/1025rpm
+2026-11-09 11:52:34 INFO 終了: cpu-gpu → OK
+2026-11-09 11:52:34 INFO 開始: idle-end (120秒, コマンド0本)
+2026-11-09 11:52:34 INFO idle-end: Tctl 82℃ | CPU 48W 5314MHz | GPU0 66℃ 205W | GPU1 92℃ 130W | NVMe 68℃ | FAN 1769/1403/1023rpm
+2026-11-09 11:53:34 INFO idle-end: Tctl 62℃ | CPU 27W 2629MHz | GPU0 52℃ 37W | GPU1 63℃ 16W | NVMe 67℃ | FAN 1108/922/1023rpm
+2026-11-09 11:54:34 INFO 終了: idle-end → OK

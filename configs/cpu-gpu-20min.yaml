@@ -1,0 +1,22 @@
+# CPU + GPU 2枚の同時負荷 (SSD なし) を20分。ファン構成を変えた後の温度の確認用
+interval: 1.0
+grace: 60
+cpu_temp_limit: 85
+scratch_dir: ~/.cache/stress-thermal
+
+notes: |
+  (2026-11-09 11:3x) ファン構成変更後。BIOS: PBO の電力上限を外した (温度上限 85℃ は維持、CO は要確認)。
+  ファン: CPU クーラー DeepCool Assassin IV、底面吸気 ARCTIC P14 Pro PST ×2 (外側から push)、上面前方吸気 ARCTIC P14 Pro Reverse ×1、
+  上面後方排気 MSI MEG SILENT GALE P12 ×1、背面 ARCTIC P12 Pro PST ×1。正圧寄り。asr4u (バックエンドと後処理用 ollama) は計測中停止。
+
+phases:
+  - name: idle-start
+    duration: 60
+  - name: cpu-gpu
+    duration: 1200
+    commands:
+      - stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout {duration}s --metrics-brief
+      - uv run --extra gpu python scripts/gpu_load.py --device 0 --duration {duration}
+      - uv run --extra gpu python scripts/gpu_load.py --device 1 --duration {duration}
+  - name: idle-end
+    duration: 120

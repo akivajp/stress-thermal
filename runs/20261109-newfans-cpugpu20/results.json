@@ -1,0 +1,48 @@
+[
+  {
+    "phase": "idle-start",
+    "sub": "",
+    "start": 1794191486.486993,
+    "end": 1794191546.4876418,
+    "ok": true,
+    "commands": []
+  },
+  {
+    "phase": "cpu-gpu",
+    "sub": "",
+    "start": 1794191546.4886024,
+    "end": 1794192754.2608047,
+    "ok": true,
+    "commands": [
+      {
+        "command": "stress-ng --cpu 16 --cpu-method all --verify --matrix 16 --timeout 1200s --metrics-brief",
+        "log_path": "runs/20261109-newfans-cpugpu20/logs/cpu-gpu-0.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "uv run --extra gpu python scripts/gpu_load.py --device 0 --duration 1200",
+        "log_path": "runs/20261109-newfans-cpugpu20/logs/cpu-gpu-1.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      },
+      {
+        "command": "uv run --extra gpu python scripts/gpu_load.py --device 1 --duration 1200",
+        "log_path": "runs/20261109-newfans-cpugpu20/logs/cpu-gpu-2.log",
+        "returncode": 0,
+        "killed": false,
+        "fail_lines": []
+      }
+    ]
+  },
+  {
+    "phase": "idle-end",
+    "sub": "",
+    "start": 1794192754.2615025,
+    "end": 1794192874.262078,
+    "ok": true,
+    "commands": []
+  }
+]
